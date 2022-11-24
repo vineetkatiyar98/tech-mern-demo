@@ -1,0 +1,357 @@
+﻿1.	Github is a cloud service
+2.	Used to host, upload our own source code. (php, python all languages)
+3.	Github product Microsoft.
+
+
+Git : tool
+Github : cloud ( )
+Other options than github:- open source and close source
+1.	Gitlab:  
+2.	Bitbucket : open source
+3.	Bitkeeper : owner (git’s owner) : open source
+
+ Git :- is a cli(command line interface) unix based and linux based tool
+Git is a SCM or VCM or VCS
+SCM:-(source code management )
+VCM:-(version control management)
+VCS:-(version control software)
+
+Git has two flavours :-
+1.	Github desktop  version (GUI)
+2.	Git bash version (CLI) : 
+
+Using git bash one can run linux/unix commands in, windows OS/mac/
+
+$ Linux Command using $
+Linux was invented by linux torwald.
+Unix, was made by ken Thompson. ( paid :- no body can use it for free)
+
+Linux torwald made a copy of unix.
+Unix is pre installed in severs.
+Git  is developed by linux torwald 
+Then , bit keeper was a cloud made by them.
+
+
+Linux community is , all free and open source.
+
+Bitkeepr , first and oldest cloud.
+Partnership with Microsoft stolen the idea of bit keeper and create github. 
+================================================================
+16 november 2022 
+Repl(read evaluat print loop)
+Some basic commands of linux terminal:-
+All terminal common name: repl
+1.	Whoami :- who is the admin of your system.
+2.	Clear :- clear screen 
+3.	Pwd :- print working directory(folder).
+4.	Mkdir:- used to make folder.
+5.	Ls :- used to show list of files and folders(noarnal)
+6.	Ls  –lart :- used to show complete details about files and folders 
+All info, who made, permissions, whyo made
+	Generally any files or folder has three permission
+1.	User
+2.	Group
+3.	Owner
+
+Permission scopes
+A.	(r) read
+B.	(W) write
+C.	(x)execute
+Status  : r+w+x-
+Status : d(directory)
+File : d-r-w+x
+Folder : d+r+w+x-
+
+7.	Touch : used to create files with or without extensions.
+It is usd to empty files.
+
+	Single use : touch index.html
+	Multiple file : touch file1 , file2, ….. filen
+
+8.	Echo : used to print anything on console.
+
+File handling:- write anything on the file without directory accessing it.
+Echo any msg or code or string > index.html
+
+Modes of files 
+1.	Overwrite mode    echo something > abc.txt (old data replaced by the new data)
+2.	Append mode    echo something >> abc.txt (old data + new data)
+
+9.	Cat : content at , command use , you can directly read file , without directly opening it.
+Rule : you have , r+ permission 
+If you don’t have permission then , access denied no sufficient permission. 
+10.	Moving inside/outside directory :
+Cd path-name : inside
+Cd ../ for outside
+
+./ or current 
+../ or parent
+
+11.	Rm -r <file-name> : this will delete all folder shift+delete
+
+File : rm -r about.html
+Folder : rm -r folder name
+
+
+How to pass range : -
+Command {start..end}
+
+
+How to change drive :- 
+Cd x : hit enter
+X is drive name
+
+Chmod : is used to change the permission code of user group  to owner 
+Super user(su)
+Super user mode : 777 permission. 
+Chmod <mod-number or permission number> <path>
+Chmod 77./
+
+1.	Git pull or fetch --all or git clone   download
+2.	Git push or upstream  upload
+
+
+18 november 2022
+Important key points about github
+https://github .com/vineetkatiyar98/reop-name.git
+https://github.com/awnishmmg/PHP-Documentation.git (awanish sir)
+
+important information related git repo:-
+1.	Every git repo has its permission 
+2.	Every git repo will have readme file
+3.	Every gilt repo may have or may not have license.
+(public repo: any body can see and download (cloneorigin) 
+ii. private
+or any body can fork (cloneupstream), and any body can watch.
+4.	Every git repo will have visibility status
+5.	Every repo will have its own owner and its own branch by default branch name is master and after august-2021 master name was changed to main in github. 
+
+(awnishmmg github)
+.gitignore :- 
+
+Git clone cloud to local download
+Git fork code one github account --> 2nd git account -> download
+
+======================================================================
+
+Public reop 
+
+How to initialise a variable in c :
+
+int a = 20; // declaration and intialize 
+printf("a = %d,a")
+print a value
+
+A variable use
+similarly 
+
+before u can use, any repo(private or public) it has sdto be initialized.
+
+
+Initialized in github and initialized in local:
+-------------------------------------------------------------
+step are ;
+
+1. repo name --> ownre --> master branch or main branch
+
+initialized in github : 
+
+2. repo Description(optional)
+3. visibility mode : private or public
+4. readme .md I.
+5.gitignore 
+6. license 
+
+any specific brach : by default main --> change --> master
+
+Initializtion in local :
+
+before u commit(final save) owner informaation is mandatory.
+
+Git will ask who are you before u commit:
+
+there are two ways of adding author information 
+
+1. local -> multiple user ->local to the user
+2. global -> single user -> globally
+
+consider, system
+
+guest-1 local user
+guest-2 local user 
+
+admin local user 
+
+if there is one then you have to set author/owner informaation globally.
+
+How to add and show author username and email:
+
+$git config  -->global user.name
+
+$git config-- global user.email
+
+for locally :
+
+$git config - local user.name 
+$git config - local user.email
+
+note :- if you supply the value, then set or if you not it will show
+
+note :- for string value if space seperated string value then in command line " " is mandatory 
+
+every space wala sentance should be insidde " " ke ander.
+
+
+adding author/ owner information globally :
+
+$ git config - global username.name "vineet katiyar"
+
+
+======================================================================
+
+23 november 2022
+
+-----------------------------------------------
+
+1. difference between detached HEAD(recent commit me kiya gya chechout HEAD se detache ho jata hai.
+and detached  HEAD undo : checkout to any commit branch) and BRANCH.
+2. what is HEAD ?
+(current branch me kiya gya lattest or recent commit HEAD kehlata hai)
+
+How to get deleted files
+
+$ git status
+$ git diff
+$ git log => commit ID or recent-branch-of-commit
+$ git checkout commit ID 
+or
+$ git checkout . in current branch
+
+
+How to git PUSH command:
+----------------
+What is originm : mian cloud server at github, gitlab, Bitbucket or Bitkeeper or heruko(salesforce company)
+
+origin : is recognized as url.
+1. https : https://github.com/username/reponame.git
+2. SSH : (secure shell) 
+{
+    i. hostname : DNS lookup [cmd => ping]
+    ii. port : 22/21
+    iii. username : git username
+    iv. password : git password
+
+    or
+
+    SSH  keys or private token
+
+}
+
+3. git cli*(administrator)
+
+what happens in SSH(putty) ?
+ans :- connection is set up between direct client to server using shell or terminal.
+there are two ways of connecting server using SSH
+============================
+1. using credential , hostname (Ip) , port 
+    1. hostname of ip : cmd => ping url without https/https
+
+    for eg : cmd => ping google.com
+    for eg : cmd => ping facebook.com
+    for eg : cmd => ping gmial.com
+
+    or
+
+    https://dnslookup.online/
+
+    dns lookup
+    dns checker 
+    mxtoolbox
+
+    all information related to server and ip can be found using above website whioch include , dns server network ip, hosting server , nameserver ..... etc
+
+(IANA) : INTERNET ASSIGNED NUMBER ATHORITY
+
+2. by-default port :
+    ftp : 21 
+    sftp : 22
+    note : if port not provided, you have to default port for public server.
+
+    note : if network is private, then there may a chance that server may use there own port number.
+    for connection you must connect to private port.
+    public smtp server : 25
+    private server : 2096 <private port>
+
+    protocol -> port assign => IANA 
+
+private port will be given server admin.  
+
+3.usrname : access from server admin
+4. password: access from server admin
+
+
+2nd method
+1. Using ssh keys or 
+1. Public  : automatically exchange b/w client and server 
+2. Private : username and password (private key)
+Install → putty →open puttygen 
+Generate token 
+		→ shake mouse cursor.
+		→shaking(algorithm) + machine(MACID) →
+		Very very long key 
+i. Public
+ii. Private => RSA
+
+Client shell ←-------------------------------------→server shell
+[data]-------------------→send------------------→[target]
+	-----------------------→encrypt---------------→ public key
+	←------------------private key -------------------→
+
+
+How to add ssh key to git repo
+ 	1. avatar icon →setting → under 
+
+2. Token : 
+
+
+
+How to set up origin
+$ git remote add origin <reepo-url>
+
+To remove
+$ git remote remove origin
+
+Again check remote or origin version
+$ git remote -v
+
+https://github.com/vineetkatiyar98/tech-mern-demo.git
+
+or
+
+https://github.com/vineetkatiyar98/tech-mern-demo.git
+
+
+
+
+FTP : 21
+SFTP : 22
+MYSQL : 3306
+SMTP : 25
+
+
+
+keys
+1. pubic o r master key
+2. private key  (then access repo or access server)
+
+
+1. GUI : penguin/filezilla/winSCP/puTTY
+2. shell : gitbash/cmd/puTTY
+
+
+token = pubic key + private key
+
+=================================================
+24 November 2022
+
+THREE WAYS TO HANDSHAKE PROCESS  (to read)
